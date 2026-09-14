@@ -1,0 +1,6 @@
+package Modelo;
+
+public enum Tags 
+{
+	UN_JUGADOR, MULTIJUGADOR_LOCAL, MULTIJUGADOR_ONLINE, DLC
+}
