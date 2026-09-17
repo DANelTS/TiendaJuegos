@@ -25,12 +25,12 @@ public class Customer {
 	//Modificar saldo
 	public void añadirSaldo(double n) {
 		if(n < 0) throw new IllegalArgumentException("Cantidad invalida");
-		this.balance += n;
+		balance += n;
 	}
 	
 	public void reducirSaldo(double n) {
 		if(n < 0 || (balance - n) < 0) throw new IllegalArgumentException("Cantidad invalida");
-		this.balance -= n;
+		balance -= n;
 	}
 	
 	//Comprobar disponibilidad de saldo

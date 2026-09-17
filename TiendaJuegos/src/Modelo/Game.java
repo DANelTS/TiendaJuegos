@@ -33,17 +33,17 @@ public class Game {
 	//Modificadores de stock
 	public void setStock(int n) {
 		if(n < 0) throw new IllegalArgumentException("Cantidad invalida");
-		this.stock = n;
+		stock = n;
 	}
 	
 	public void aumentarStock(int n) {
 		if(n < 0) throw new IllegalArgumentException("Cantidad invalida");
-		this.stock += n;
+		stock += n;
 	}
 	
 	public void reducirStock(int n) {
 		if(n > stock || n < 0) throw new IllegalArgumentException("Cantidad invalida");
-		this.stock -= n;
+		stock -= n;
 	}
 	
 	//Comprobar si hay unidades disponibles
