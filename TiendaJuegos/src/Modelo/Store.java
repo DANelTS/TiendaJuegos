@@ -75,7 +75,7 @@ public class Store {
 	public void comprarJuego(Game game, Customer customer, int quantity) {
 		for(Game g : games) {
 			for (Customer c : customers) {
-				if(g == game && c == customer && quantity <= g.getStock()) {
+				if(g == game && c == customer && quantity > 0 && quantity <= g.getStock() && c.getBalance() >= (g.getPrice() * quantity)) {
 					g.reducirStock(quantity);
 					c.reducirSaldo(g.getPrice() * quantity);
 					Purchase purchase = new Purchase(customer, game, quantity);
