@@ -13,6 +13,15 @@ public class Store {
 		games = new ArrayList<Game>();
 		customers = new ArrayList<Customer>();
 		purchases = new ArrayList<Purchase>();
+		
+		games.add(new Game("Mario Kart 8", Genre.SPORTS, 60.00, 20));
+		games.add(new Game("New Super Mario Bros Wii", Genre.PLATFORM, 50, 5));
+		games.add(new Game("Dishonored", Genre.RPG, 60, 15));
+		
+		customers.add(new Customer("Pedro", 70));
+		customers.add(new Customer("Manolo", 100));
+		customers.add(new Customer("María", 155));
+		
 	}
 	
 	//Getters
