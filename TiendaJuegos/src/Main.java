@@ -29,13 +29,18 @@ public class Main {
 				int id = sc.nextInt();
 				sc.nextLine();
 				
+				Game juego = null;
+				
 				for(Game game : store.getJuegos()) {
 					if(game.getID() == id) {
-						System.out.println(game.toString());
+						juego = game;
 						break;
 					}
 
 				}
+				
+				if(juego != null) System.out.println(juego.toString());
+				else System.out.println("Juego no encontrado");
 				
 				break;
 				
